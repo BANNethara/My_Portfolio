@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 80vh;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    padding: 45px;
+    background: linear-gradient(120deg,#172f5f,#246a9d, #278ea5,#1a305e);
+    margin:0;
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    overflow-x: hidden;
+}
+
+.form {
+    max-width: 1100px;
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+
+    border-top-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: double;
+  border-left-width: 10px;
+  border-left-color: rgb(0, 0, 0);
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(16, 13, 13);
+  border-radius: 10px;
+  padding: 5px;
+  
+  display: flex;
+  flex-direction: column; 
+}
+
+:root {
+    --btn-spacing-top: 20px;
+    --btn-spacing-bottom: 20px;
+    --btn-spacing-left: 20px;
+    --btn-spacing-right: 20px;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Handles spacing between columns */
+}
+
+.form-column {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn {
+    height: 25px;
+    width: 70px;
+    background-color:  #0f81c3;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color:  #456dcc;
+}
+
+.btns-group {
+    display: flex;
+    justify-content: flex-end; /* this will align the button to the left */
+    margin-top: 20px;
+    margin-top: var(--btn-spacing-top);
+    margin-bottom: var(--btn-spacing-bottom);
+    margin-left: var(--btn-spacing-left);
+    margin-right: var(--btn-spacing-right);
+    align-self: flex-end;
+}
+
+.alert-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.alert-danger {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Change this to your preferred color */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed; /* This will keep the button at the same position even when you scroll */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the left */
+    z-index: 1000; /* This ensures the button is above other elements */
+}
+
+
+.navbar{
+    width: 100%; /* This ensures it takes the full width of its parent, which should be the .main class */
+    max-width: 1700px; /* This will make sure it doesn't exceed 1500px even on larger screens */
+    height: 70px;
+    background-color:rgba(0, 0, 0, 0.719);  
+    padding: 40px 200px;
+   margin-top: -50px;
+   
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 200px;
+    z-index: 2;
+    left: 40px; /* Adjust the left value to move the dropdown to the left */
+  
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: -25px;
+    font-size: 20px;
+    float:none;
+   
+  
+    
+  }
+  a:hover{
+    background:#8d8d8d ;
+  }
+  .menu{
+    margin-top: -50px;
+  }
+   
+    ul li ul{
+     
+      display:none;
+      margin-left:-15px;
+      background-size: 50px;
+      left:10px;
+      background: #000000;
+    
+    }
+  
+  ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    left: 700px;
+    margin-left: 60px;
+    margin-top: 5px;
+    right: 150px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px #faf2f2,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+       
+  
+        
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+  
+  
+    width:150px;
+    color:rgb(247, 244, 244);
+    display:block;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;;
+    padding: 10px;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    margin-left:40px;
+    margin-top: -25px;
+  }
+  .dropdown-content li {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: -20px; /* Adjust the font size as needed */
+    margin-top: 8px;
+  }
+  
+  
+  ul li a:hover{
+  
+    color: #000000;
+     background:#8d8d8d ;
+  }
+  
+.logo{
+
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: #63cff3;
+    float: left;
+    padding-top: 10px;
+    margin-left: -70px;
+    margin-top: -40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #ffffff,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+        1px 5px 1px #666464,
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+   
+   
+  }

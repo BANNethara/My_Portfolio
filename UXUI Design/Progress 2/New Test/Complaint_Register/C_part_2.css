@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #172f5f, #246a9d, #278ea5, #1a305e);
+    overflow-x: hidden;  /* Ensure there's no horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* This will make content start from the top */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    overflow-x: hidden;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Increased opacity for better visibility */
+    padding: 15px 500px; /* Adjusted padding */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Added shadow for effect */
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 200px;
+    z-index: 2;
+    left: 100px; /* Adjust the left value to move the dropdown to the left */
+  
+  
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  ul{
+   
+    display: flex;
+    justify-content: space-between; /* Evenly space the navbar items */
+    width: 80%; /* Use 80% of navbar width */
+    margin: 0 auto; /* Center the ul in the navbar */
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: -25px;
+    font-size: 20px;
+    float:none;
+    margin-left: 0; /* Reset margin */
+    margin-top: 0; /* Reset margin */
+   
+  
+    
+  }
+  a:hover{
+    background:#8d8d8d ;
+  }
+  .menu{
+    margin-top: 0; /* Reset margin */
+  }
+   
+    ul li ul{
+     
+      display:none;
+      margin-left:-15px;
+      background-size: 50px;
+      left:10px;
+      background: #000000;
+    
+    }
+  
+  ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    left: 700px;
+    margin-left: 60px;
+    margin-top: 5px;
+    right: 150px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px #faf2f2,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+       
+  
+        
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+  
+  
+        width:150px;
+        color:rgb(255, 255, 255);
+        display:block;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;;
+        padding: 10px;
+        border-radius: 10px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight:bold;
+        margin-left:140px;
+        margin-top: -25px;
+  }
+  .dropdown-content li {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: -20px; /* Adjust the font size as needed */
+    margin-top: 8px;
+  }
+  .dropdown-content li a{
+    margin-left: 60px;
+    ;
+  }
+  
+  ul li a:hover{
+  
+    color: #000000;
+     background:#8d8d8d ;
+  }
+  
+.logo{
+
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: #63cff3;
+    /* Removed float */
+    margin-left: -100px; /* Reset margin */
+    margin-top: 0; /* Reset margin */
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #ffffff,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+        1px 5px 1px #666464,
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+   
+   
+  }
+
+  .container {
+    width: 90%;  /* Take 90% of the screen width */
+    max-width: 700px;  /* Doesn't exceed 700px */
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    border: 5px solid rgb(16, 13, 13);
+    margin-top: 28px; /* Increase margin from the top */
+}
+u {
+    text-decoration: none;
+}
+
+.underlined-title {
+    text-decoration: underline;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+    display: block;
+}
+
+.input-box input, .input-box select, .input-box textarea {
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.input-box textarea {
+    margin-top: 0px;  /* reduce the margin-top value */
+}
+
+.input-box label {
+    margin-bottom: 0px;  /* reduce the margin-bottom value */
+}
+
+
+.btn.btn-primary {
+    height: 28px;
+    width: 70px;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: #0f81c3;
+}
+
+.btn.btn-primary:active {
+    background-color: darkblue;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 496px;  /* this sets space between the buttons */
+}
+
+
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Change this to your preferred color */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed; /* This will keep the button at the same position even when you scroll */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the left */
+    z-index: 1000; /* This ensures the button is above other elements */
+}
+
+.home-btn:hover {
+    background-color: #2980b9; /* A slightly darker shade for hover effect */
+}

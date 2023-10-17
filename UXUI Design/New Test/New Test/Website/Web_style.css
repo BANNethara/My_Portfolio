@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/yy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    animation: change 10s infinite ease-in-out;
+ 
+}
+@keyframes change{
+10% 
+{
+    background-image: url(../images/yy.jpg);
+}
+
+30%
+{
+    background-image: url(../images/nn.jpg); 
+}
+90%
+{
+    background-image: url(../images/poli.jpg);
+
+}
+}
+
+
+.navbar{
+    width: 100%; /* This ensures it takes the full width of its parent, which should be the .main class */
+    max-width: 1500px; /* This will make sure it doesn't exceed 1500px even on larger screens */
+    height: 55px;
+    background-color:rgba(0, 0, 0, 0.719);  
+    padding: 20px 100px;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    
+}
+.icon img {
+    width: 100%;       /* This ensures the logo takes the full width of its container */
+   
+}
+
+.logo{
+
+    font-size: 45px;
+    font-family:Bodoni MT Black(196, 200, 204);
+    padding-left: 20px;
+    color: #63cff3;
+    float: left;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-top: -13px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #ffffff,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+        1px 5px 1px #666464,
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.logo img{
+    width: -80px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 150px;
+    z-index: 2;
+    left: 40px; /* Adjust the left value to move the dropdown to the left */
+}
+
+/* Style for the dropdown items within the dropdown content */
+.dropdown-content li {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: -20px; /* Adjust the font size as needed */
+    margin-top: 8px;
+  }
+  
+
+/* Show the dropdown content when hovering over the dropdown link */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
+
+.menu{
+    width: 300px;
+    float: left;
+    height: 50px;
+    margin-top: 20px
+}
+/*--------------profile icon---------------*/
+#ProfileIcon {
+    position: relative;
+}
+
+.ProfileIcon {
+    width: 50px;
+    position: absolute;
+    top: -70px;
+    right: 40px;
+   
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: -15px;
+    font-size: 20px;
+  
+     
+
+}
+ul li ul{
+   
+    display:none;
+    margin-left:-20px;
+    background-size: 50px;
+    left:10px;
+    background:rgba(0, 0, 0, 0.719); 
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color: #f5f1f1;
+    left: 700px;
+    margin-left: 60px;
+    margin-top: 5px;
+    right: 100;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px #faf2f2,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+       
+
+        
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+       1px 30px 60px rgba(16,16,16,0.4);
+       
+
+  width:150px;
+  color:white;
+  display:block;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight:bold;
+  margin-left:-7px;
+  margin-top: -5px;
+  
+}
+
+ul li a:hover{
+    color: #000000;
+    background: grey;
+ 
+}
+
+.search{
+    width: 390px;
+    float: left;
+    margin-left: 302px;
+    margin-top: 20px;
+    margin-right: 10px;
+   
+ 
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #993f03;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7300;
+    border: 2px solid #ff6a00;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+.footer{
+    
+    height: auto;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+    left:0 ;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.719);   
+    padding:20px 100px;
+
+    
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color:#ffffff;
+
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin-left: -120px;
+}
+
+.content h1{
+    font-family: 'Amasis MT Pro Black';
+    font-size: 65px;
+    margin-left: -100px;
+    margin-top: -1%;
+    letter-spacing: 2px;
+    color:#ffffff;
+    text-shadow: 1px 1px 1px #aeaeae,
+    1px 2px 1px #b1b0b0,
+    1px 3px 1px #b1b0b0,
+    1px 4px 1px #b5acac,
+   
+ 
+   
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+
+
+
+}
+.content h2{
+    font-size:50px;
+    margin-left: -100px;
+    color: #a3a1a1;
+    margin-top: -16px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #6fd6f6;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ffffff;
+    font-size: 65px;
+    text-shadow: 1px 1px 1px #aeaeae,
+    1px 2px 1px #b1b0b0,
+    1px 3px 1px #b1b0b0,
+    1px 4px 1px #b5acac,
+   
+ 
+   
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+
+
+
+}
+
+.form{
+    width: 240px;
+    height: 420px;
+    background-color:rgb(0, 0, 0);  
+    position: absolute;
+    top: -240px;
+    left: 1099px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 40px;
+}
+.form h4{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 5px;
+    margin-left: -5px;
+    margin-top: -1px;
+    
+}
+.form img{
+    margin-top: -30px;
+    margin-left: 75px;
+}
+
+.form a{
+    font-size:17px;
+}
+
+.form h2{
+    width: 240px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000000;
+    font-size: 10px;
+    background-color: #6cdde2;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px;
+    font-weight: bold;
+}
+.form h3{
+    font-size:20px;
+    margin-left: 35px;
+}
+
+.login a{
+    width: 100%;
+    background: url(yy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #096daf;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fa6525;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 250px;
+    height: 40px;
+    background: #82e7fe;
+    border: none;
+    margin-top: 30px;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #b5b4b4;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #ffffff;
+    color: #3afff2;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #2f8fcb;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}

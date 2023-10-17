@@ -1,0 +1,68 @@
+/* google fonts link */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background: linear-gradient(120deg,#172f5f,#246a9d, #278ea5,#1a305e);
+  min-height: 100vh; /* This ensures the body always occupies the entire viewport height */
+}
+
+.theme-text {
+  color: #474af0;
+}
+
+.card-img-top {
+  height: auto; /* Set the height to auto to maintain the original aspect ratio */
+  width: auto; /* Set the width to auto to maintain the original aspect ratio */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  max-height: 90%; /* Ensure the image doesn't exceed its container's height */
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+.card:hover {
+  color: rgb(255, 255, 255);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #425284;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+}
+.container-fluid {
+  padding-top: 10px;
+  width: 1500px;
+  height: 800px;
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.container-fluid .row.mb-5 {
+  margin-top: 50px; /* Adjust the value as required */
+}
+
+html, body {
+  height: 100%; /* Ensures that the body takes up the full height of the viewport */
+  overflow: au; /* This prevents the scrolling */
+}
+

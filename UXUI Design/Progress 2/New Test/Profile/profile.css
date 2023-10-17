@@ -1,0 +1,79 @@
+/* Profile Styles */
+.container {
+    width: 800px;  
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh; 
+    display: grid;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(120deg,#172f5f,#246a9d, #278ea5,#1a305e);
+    overflow-y: auto; /* This will allow scrolling when content is taller than viewport */
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body.text-center {
+    padding: 20px;
+}
+
+.rounded-circle.img-fluid {
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h5.my-3 {
+    margin-top: 20px !important;
+}
+
+p.text-muted {
+    color: #747474 !important;
+}
+
+/* Information Styles */
+.col-md-5, .col-md-7 {
+    padding: 0 15px;
+}
+
+.card-body {
+    padding: 20px 30px;
+}
+
+p.mb-0 {
+    margin-bottom: 5px !important;
+    font-weight: bold;
+}
+
+hr {
+    margin: 15px 0;
+    border-top: 1px solid #ddd;
+}
+
+.text-primary.font-italic {
+    color: #007bff !important;
+}
+
+.progress {
+    height: 10px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+/* Responsive behavior */
+@media (max-width: 767px) {
+    .col-md-5, .col-md-7 {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}

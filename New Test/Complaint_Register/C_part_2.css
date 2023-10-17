@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(120deg, #172f5f, #246a9d, #278ea5, #1a305e);
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(16, 13, 13);
+}
+u {
+    text-decoration: none;
+}
+
+.underlined-title {
+    text-decoration: underline;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+    display: block;
+}
+
+.input-box input, .input-box select, .input-box textarea {
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.input-box textarea {
+    margin-top: 0px;  /* reduce the margin-top value */
+}
+
+.input-box label {
+    margin-bottom: 0px;  /* reduce the margin-bottom value */
+}
+
+
+.btn.btn-primary {
+    height: 28px;
+    width: 70px;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: #0f81c3;
+}
+
+.btn.btn-primary:active {
+    background-color: darkblue;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 496px;  /* this sets space between the buttons */
+}
+
+
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Change this to your preferred color */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed; /* This will keep the button at the same position even when you scroll */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the left */
+    z-index: 1000; /* This ensures the button is above other elements */
+}
+
+.home-btn:hover {
+    background-color: #2980b9; /* A slightly darker shade for hover effect */
+}

@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.label-style {
+    width: 200px;
+    display: inline-block;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh; /* Use 100vh so it fits the viewport */
+    display: grid;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(120deg,#172f5f,#246a9d, #278ea5,#1a305e);
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    width: 130%;
+    background: #ffffff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 10px;
+    border-left-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(16, 13, 13);
+    border-radius: 10px;
+    left: 350px;
+    margin-top: 20px;
+    
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-box label {
+    color: #333;
+    display: block;
+    margin-bottom: 4px; /* Decreased margin for less space between label and input */
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 10px; /* Decreased margin for less space between each input box */
+}
+
+.input-box input {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 85%;
+}
+
+
+.gender-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gender-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+.select-box select {
+    width: 85%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn.btn-primary {
+    height: 28px; /* Adjust the height to a larger size so that the text can be vertically centered properly */
+    width: 70px; /* Adjusted for better appearance */
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: #0f81c3;
+    text-align: center;  /* Center text horizontally */
+    float: left;
+    margin-left: 250px;
+}
+
+
+.btn.btn-primary:active {
+    background-color: darkblue;
+}
+
+
+
+.btn.btn-primary:hover {
+    background-color: #0a5c8a; /* Darker blue for hover state */
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .gender-option {
+        flex-direction: column;
+    }
+}
+
+/* New styles for 2-column layout */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex: 0 0 48%;  /* take up roughly half of the container width */
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .form-column {
+        width: 100%; /* stack columns on smaller screens */
+    }
+}
+
+
+
+button:active {
+    background-color: darkblue;
+}
+
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Change this to your preferred color */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed; /* This will keep the button at the same position even when you scroll */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the left */
+    z-index: 1000; /* This ensures the button is above other elements */
+}
+
+.home-btn:hover {
+    background-color: #2980b9; /* A slightly darker shade for hover effect */
+}
+.navbar{
+    width: 100%; /* This ensures it takes the full width of its parent, which should be the .main class */
+    max-width: 1700px; /* This will make sure it doesn't exceed 1500px even on larger screens */
+    height: 100px;
+    background-color:rgba(0, 0, 0, 0.719);  
+    padding: 40px 200px;
+   margin-top: 500px;
+   
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 200px;
+    z-index: 2;
+    left: 40px; /* Adjust the left value to move the dropdown to the left */
+  
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: -25px;
+    font-size: 20px;
+    float:none;
+   
+  
+    
+  }
+  a:hover{
+    background:#8d8d8d ;
+  }
+  .menu{
+    margin-top: -50px;
+  }
+   
+    ul li ul{
+     
+      display:none;
+      margin-left:-15px;
+      background-size: 50px;
+      left:10px;
+      background: #000000;
+    
+    }
+  
+  ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    left: 700px;
+    margin-left: 60px;
+    margin-top: 5px;
+    right: 150px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px #faf2f2,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+       
+  
+        
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+  
+  
+    width:150px;
+    color:rgb(255, 255, 255);
+    display:block;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;;
+    padding: 10px;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    margin-left:35px;
+    margin-top: -20px;
+  }
+  .dropdown-content li {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: -20px; /* Adjust the font size as needed */
+    margin-top: 8px;
+  }
+  
+  
+  ul li a:hover{
+  
+    color: #000000;
+     background:#8d8d8d ;
+  }
+  
+.logo{
+
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: #63cff3;
+    float: left;
+    padding-top: 10px;
+    margin-left: -70px;
+    margin-top: -15px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #ffffff,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+        1px 5px 1px #666464,
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+  }

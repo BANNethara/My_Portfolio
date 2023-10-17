@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-image: url(../q.jpeg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    animation:change 10s infinite ease-in-out;
+    background-size: 100% 90vh; /* Adjust the background image size */
+    filter:brightness(1.5) contrast(1.4);
+
+ 
+}
+
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    filter:brightness(-25) contrast(1.9);
+    margin-left: -2%;
+    ;
+    
+}
+.icon img {
+    width: 60%;   
+
+        /* This ensures the logo takes the full width of its container */
+   
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 150px;
+    z-index: 2;
+    left: 40px; /* Adjust the left value to move the dropdown to the left */
+}
+
+
+  
+
+/* Show the dropdown content when hovering over the dropdown link */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.menu{
+    width: 300px;
+    float: left;
+    height: 50px;
+    margin-top: 20px
+}
+
+/*--------------profile icon---------------*/
+#ProfileIcon {
+    position: relative;
+   
+}
+
+.ProfileIcon {
+    width:3%;
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    margin-top: -5%;
+    margin-right:-2%;
+    border-radius:50%;
+    
+
+   
+}
+
+
+/* header......*/
+.navbar{
+    width: 100%; 
+    max-width: 1500px; /* This will make sure it doesn't exceed 1500px even on larger screens */
+    height: 55px;
+    background-color: #173e56;
+    padding: 20px 100px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: -15px;
+    font-size: 20px;
+  
+     
+
+}
+/*options...............*/
+
+ul li ul{
+   
+    display:none;
+    margin-left:-48%;
+    background-size: 50px;
+    left:10px;
+    background-color: #173e56;
+    width:10%
+  
+}
+
+/* options box style............. */
+.dropdown-content li {
+    padding: 10px;
+    text-align: left;
+    font-style: bold;
+    margin-left: 19px; /* Adjust the font size as needed */
+    margin-top: 8px;
+    font-size: 85%;
+  }
+
+ul li a{
+
+   
+    transition: 0.4s ease-in-out;
+
+
+  width:150px;
+  color:white;
+  display:block;
+  font-family: bold;
+  text-decoration: none;
+  font-size: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight:bold;
+  margin-left:-30%;
+  margin-top: 2%;
+  
+}
+
+ul li a:hover{
+    color: #ffffff;
+    background: rgba(37, 36, 36, 0.874);
+    transform:transform 0.2s;
+    padding: 10% 5%;
+    border-radius: 15px;
+ 
+}
+
+.logo{
+
+    font-size: 45px;
+    font-family:Bodoni MT Black(196, 200, 204);
+    padding-left: 20px;
+    color: #63cff3;
+    float: left;
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-top: -55%;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #ffffff,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+    
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.icon img{
+    width: -50%;
+    height: 120%;
+    margin-left: -37%;
+    margin-top: -9%;
+    filter:brightness(0.6) contrast(3.5);
+
+
+}
+/*end................*/
+
+.search{
+    width: 390px;
+    float: left;
+    margin-left: 302px;
+    margin-top: 20px;
+    margin-right: 10px;
+   
+ 
+}
+
+
+ /*............middle footer..*/ 
+.footer{  
+    height: 50%;
+    width: 80vw;
+    bottom: 0;
+    position: absolute;
+    left:10% ;
+    right: 0;
+    background-color:rgba(123, 122, 122, 0.719);   
+    padding:50% -18%;
+    margin-bottom: 15%;
+    border-top-left-radius: 30px; /* Adjust the values for the desired curve */
+    border-top-right-radius: 30px; /* Adjust the values for the desired curve */
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:30px;
+  
+
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color:#ffffff;
+
+}
+
+
+/*Welcome-minor design......*/
+.content h1{
+    font-family: 'Amasis MT Pro Black';
+    font-size: 330%;
+    margin-left: 8%;
+    margin-top: 1%;
+    letter-spacing: 2px;
+    color:#ebebeb;
+    text-shadow: 1px 1px 1px #aeaeae,
+    1px 2px 1px #b1b0b0,
+
+}
+
+.content h2{
+    font-size:300%;
+    margin-left: 35%;
+    color: #070707;
+    margin-top: 5%;
+
+}
+
+
+/*login  - view buttons..............*/
+.buttons {
+    margin-top: 5%;
+    margin-left: 22%;
+  
+  }
+  
+  .buttons button {
+    background-color: #55a3c7;
+    color: #fff;
+    border: none;
+    padding: 3% 4%;
+    font-size: 120%;
+    text-transform: uppercase;
+    margin-right: 6%;
+    cursor: pointer;
+    size:11% ;
+
+
+  }
+  
+  .buttons button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  
+  }
+  .buttons :hover{
+    -webkit-transform:scale(1.1) ;
+    transform: scale(1.1);
+    color: #f9faff;
+    background: #130e94;
+    
+  
+  }
+
+
+ 
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 250px;
+    height: 40px;
+    background: #82e7fe;
+    border: none;
+    margin-top: 30px;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #b5b4b4;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #ffffff;
+    color: #3afff2;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #2f8fcb;
+}
+
+/*bottom footer....................*/
+
+footer {
+    background-color: #2a2a72;
+    color: #fff;
+    text-align: center;
+    padding: 3% 0;
+    margin-top: -19%; /* Add a negative margin to move the footer up */
+    height: 110px;
+    position: fixed; /* Change to 'absolute' if you want it to be at the bottom of the content container */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1%;
+}
+ 

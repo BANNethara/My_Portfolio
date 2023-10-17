@@ -1,0 +1,312 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg,#172f5f,#246a9d, #278ea5,#1a305e);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+
+
+
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh; /* Use 100vh so it fits the viewport */
+    display: grid;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(120deg,#172f5f,#246a9d, #278ea5,#1a305e);
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    overflow-x: hidden;
+
+    
+}
+
+.container {
+    max-width: 450px; /* More reduced width */
+    margin: 0 auto;
+    padding: 0 5px; /* Further reduction in padding */
+  
+}
+.form {
+    background-color: #ffffff;
+    max-width: 800px;
+    padding: 20px;  /* Reduced padding from 30px to 20px */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    resize: vertical; /* Allows vertical resizing */
+    overflow: auto; /* Needed to make resizing work */
+    max-height: 90vh; /* You can adjust this value to ensure it doesn't take up the entire screen height */
+    margin-top: 50px;
+    /* your other styles ... */
+
+    
+
+}
+.form h1 {
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin-bottom */
+    color: #007bff;
+    font-size: 20px; /* Slightly smaller font-size */
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    width: 48%; /* Slightly less than 50% to account for potential padding/margins */
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px; /* Reduced margin */
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 7px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 5px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Notification styling */
+#notification {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Image styling */
+.imageInput {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.picContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btns-group {
+    display: flex;
+    justify-content: flex-end;  /* Aligns items to the right side in a flex container */
+    width: 100%;  /* Ensures the container spans the full width of its parent */
+}
+
+
+@media (max-width: 768px) {
+    .form-column {
+        width: 100%;
+    }
+}
+
+.submitbtn {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    font-size: 18px; /* Reduced font size for smaller height */
+    line-height: 16px; /* Adjusted line height for smaller height */
+    padding: 2px 5px; /* Small vertical padding and the existing horizontal padding */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submitbtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Change this to your preferred color */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed; /* This will keep the button at the same position even when you scroll */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the left */
+    z-index: 1000; /* This ensures the button is above other elements */
+}
+
+.home-btn:hover {
+    background-color: #2980b9; /* A slightly darker shade for hover effect */
+}
+
+.navbar{
+    width: 100%; /* This ensures it takes the full width of its parent, which should be the .main class */
+    max-width: 1700px; /* This will make sure it doesn't exceed 1500px even on larger screens */
+    height: 110px;
+    background-color:rgba(0, 0, 0, 0.719);  
+    padding: 30px 200px;
+   margin-top: -400px;
+   
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 200px;
+    z-index: 2;
+    left: 40px; /* Adjust the left value to move the dropdown to the left */
+  
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: -25px;
+    font-size: 20px;
+    float:none;
+   
+  
+    
+  }
+  a:hover{
+    background:#8d8d8d ;
+  }
+  .menu{
+    margin-top: -50px;
+  }
+   
+    ul li ul{
+     
+      display:none;
+      margin-left:-15px;
+      background-size: 50px;
+      left:10px;
+      background: #000000;
+    
+    }
+  
+  ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    left: 700px;
+    margin-left: 60px;
+    margin-top: 5px;
+    right: 150px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px #faf2f2,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+       
+  
+        
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+  
+  
+    width:150px;
+    color:rgb(247, 244, 244);
+    display:block;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;;
+    padding: 10px;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    margin-left:40px;
+    margin-top: -24px;
+  }
+  .dropdown-content li {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: -20px; /* Adjust the font size as needed */
+    margin-top: 8px;
+  }
+  
+  
+  ul li a:hover{
+  
+    color: #000000;
+     background:#8d8d8d ;
+  }
+  
+.logo{
+
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: #63cff3;
+    float: left;
+    padding-top: 10px;
+    margin-left: -70px;
+    margin-top: -5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #ffffff,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #666464,
+        1px 5px 1px #666464,
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+   
+   
+  }
