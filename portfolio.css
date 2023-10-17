@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;    /*body background eka black kra*/
+    background: #000000;    /*body background eka black kra*/
     color:#fff;
     
 }
@@ -20,13 +20,15 @@ body{
     background-position: center;
 }
 .container{
-    padding: 10px  10%;     
+    padding: 10px  10%; 
+ 
 }
+  
     /*.................start.................*/
 nav{
     display:flex;  
     align-items: center;   
-    justify-content: space-between;  /* nav bar eke home,about athara space eka thyla hadana eka */
+    justify-content: space-around;  /* nav bar eke home,about athara space eka thyla hadana eka */
     flex-wrap: wrap;
   
     
@@ -34,31 +36,62 @@ nav{
     width: 150%; 
     max-width: 1500px; 
     height: 80px;
-    background-color: #31b6c8;
+    background-color: #2ecce1;
     margin-left: -170px;
     margin-top: -10px;
   
   
 }
 .logo{
-    width: 140px;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 110px;
+    color:  #000000;
+    text-shadow: 1px 1px 1px #000000,
+    1px 2px 1px #717171,
+    1px 3px 1px #ffffff,
+    1px 4px 1px #ffffff,
+    1px 5px 1px #ffffff,
+  
+  
+
+   
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+
+
   
 }
      
-    
-nav ul li{        /*.....nav bar eke home,button...*/
+               /*.....nav bar eke home,button...*/
+nav ul li{       
     display:inline-block;
     list-style: none;
     margin: 10px 20px;
-    
-}
-nav ul li a{  
-    color:#070707 ;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-   margin-left: 150px;
+    margin-left:60px ;
   
+}
+nav ul li a{
+    color:#000000 ;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+   margin-left: 100px;             /* nav bar eke home,about athara space eka thyla hadana eka */
+   text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #717171,
+        1px 3px 1px #7a7a7a,
+        1px 4px 1px #7a7a7a,
+        
+      
+      
+    
+       
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 }
 nav ul li a::after{
     content: '';
@@ -69,18 +102,27 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+                   /*.....my changes......*/
+    transform:transform 0.2s;
+    padding: 10% 5%;
+    border-radius: 15px;
+    color: #ffffff;
+    background: rgba(37, 36, 36, 0.874);
+  
 }
 nav ul li a:hover::after{   
-    width: 100%;
+  width: 100%;
+    
   
 }
 /*..............end...............*/
 .mypic{
  margin-left: 850px;
- margin-top: -15px;
+ margin-top: -50px;
  transform: translateY(-170px); /* This pushes the image upward */
- border-radius: 15px;
+border: 5px solid #23d5ed; /* Replace #FF0000 with the color you desire */
 
+border-radius: 20px;
 
 }
 
@@ -92,11 +134,12 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-text br{
-    margin-right:100px;
+text-align: center;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    font-style: italic;
 }
 .header-text h1 span{
     color: #1ad5df;
@@ -130,8 +173,16 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #ffffff;
+    font-style: italic;
 }
+.sub-title-1 {
+    margin-left: 450px;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+}
+
 
 /*..........tab titles..........*/
 
@@ -205,7 +256,7 @@ nav ul li a:hover::after{
 }
 .services-list div a{     /*  links      */
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
