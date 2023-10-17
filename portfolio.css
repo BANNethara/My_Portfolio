@@ -28,15 +28,17 @@ body{
 nav{
     display:flex;  
     align-items: center;   
-    justify-content: space-around;  /* nav bar eke home,about athara space eka thyla hadana eka */
-    flex-wrap: wrap;
-  
+    justify-content: flex-end;  /* nav bar eke home,about athara space eka thyla hadana eka */
+    
+ /***************************************************/
+ 
+ /****************************************************/ 
     
     /*....my change.......*/
     width: 150%; 
     max-width: 1500px; 
     height: 80px;
-    background-color: #2ecce1;
+    background-color: #28c1e7;
     margin-left: -170px;
     margin-top: -10px;
   
@@ -66,49 +68,54 @@ nav{
 }
      
                /*.....nav bar eke home,button...*/
-nav ul li{       
-    display:inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    margin-left:60px ;
-  
-}
-nav ul li a{
-    color:#000000 ;
-    text-decoration: none;
-    font-size: 20px;
-    position: relative;
-   margin-left: 100px;             /* nav bar eke home,about athara space eka thyla hadana eka */
-   text-shadow: 1px 1px 1px #000000,
-        1px 2px 1px #717171,
-        1px 3px 1px #7a7a7a,
-        1px 4px 1px #7a7a7a,
-        
-      
-      
-    
-       
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4);
-}
+               @keyframes menu-item-hover {
+                0% {
+                  transform: translateY(0);
+                }
+                50% {
+                  transform: translateY(-5px);
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+              
+              nav ul li {
+                display: inline-block;
+                list-style: none;
+                margin: 10px 20px;
+                margin-left: 60px;
+                animation: menu-item-hover 1s infinite; /* Apply the animation to the menu items */
+              }
+              
+              nav ul li a {
+                color: #000000;
+                text-decoration: none;
+                font-size: 20px;
+                position: relative;
+                margin-left: 100px;
+                text-shadow: 1px 1px 1px #000000,
+                             1px 2px 1px #717171,
+                             1px 3px 1px #7a7a7a,
+                             1px 4px 1px #7a7a7a,
+                             1px 18px 6px rgba(16, 16, 16, 0.4),
+                             1px 22px 10px rgba(16, 16, 16, 0.2),
+                             1px 25px 35px rgba(16, 16, 16, 0.2),
+                             1px 30px 60px rgba(16, 16, 16, 0.4);
+              }
+              
+
+
 nav ul li a::after{
     content: '';
     width: 0%;     /*..meka 100 kroth underline ekak watenwa..0 dmhma hidden wenw line eka*/
     height: 3px;
-    background: #0c0c0c;
+    background: #000000;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
-                   /*.....my changes......*/
-    transform:transform 0.2s;
-    padding: 10% 5%;
-    border-radius: 15px;
-    color: #ffffff;
-    background: rgba(37, 36, 36, 0.874);
-  
+                  
 }
 nav ul li a:hover::after{   
   width: 100%;
@@ -116,34 +123,70 @@ nav ul li a:hover::after{
   
 }
 /*..............end...............*/
-.mypic{
- margin-left: 850px;
- margin-top: -50px;
- transform: translateY(-170px); /* This pushes the image upward */
-border: 5px solid #23d5ed; /* Replace #FF0000 with the color you desire */
-
-border-radius: 20px;
-
-}
-
+.mypic {
+    margin-left: 850px;
+    margin-top: -50px;
+    transform: translateY(-170px);
+    border: 2px solid #23d5ed;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: inline-block; /* Add this to make the div take only the necessary width */
+    border-width: 6px;
+  }
+  
+  .mypic img {
+    width: 100%; /* Make the image width 100% of the parent div */
+    height: 100%; /* Auto adjust the height to maintain aspect ratio */
+    display: block; /* Remove any default spacing around the image */
+    margin-bottom: -20px;
+  }
 
 
      /*......I'm Niseni ............start...........*/
-.header-text{    
-    margin-top: 20%;
-    font-size: 30px;
-}
-.header-text br{
-text-align: center;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-    font-style: italic;
-}
-.header-text h1 span{
-    color: #1ad5df;
-}
+     .header-text {
+        margin-top: 20%;
+        font-size: 30px;
+        animation: fadeIn 1s ease-in-out; /* Add a fade-in animation */
+      }
+      
+      .header-text br {
+        text-align: center;
+      }
+      
+      .header-text h1 {
+        font-size: 60px;
+        margin-top: 20px;
+        font-style: italic;
+        animation: slideIn 1.5s ease-in-out; /* Add a slide-in animation */
+      }
+      
+      .header-text h1 span {
+        color: #1ad5df;
+      }
+      
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-100%);
+        opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+
 /*..............end.........*/
 
 
@@ -166,6 +209,12 @@ text-align: center;
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    transform: translateY(-170px); /* This pushes the image upward */
+    border: 6px solid #23d5ed; /* Replace #FF0000 with the color you desire */
+    
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 200px;
 }
 .about-col-2{
     flex-basis: 60%;   /* about content eka */
@@ -209,6 +258,145 @@ text-align: center;
 }
 .tab-links.active-link::after{
     width: 50%;
+}
+
+/*........start skiils........*/
+
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+      --big-font-size: 3.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+      --smaller-font-size: .875rem;
+    }
+  }
+
+  .skills__container {
+    row-gap: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse; /* Reverses the order of items */
+    justify-content: space-between; /* Creates space between the items */
+    align-items: center;
+  }
+  
+  .skills__subtitle {
+    margin-bottom: var(--mb-2);
+  }
+  
+  .skills__text {
+    margin-bottom: var(--mb-4);
+  }
+  
+  .skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: .5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    margin-right: 10px;
+    margin-left: 40px;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  }
+  
+  .skills-content {
+    flex: 1;
+}
+
+.skills__img-container {
+    flex: 1;
+    text-align: right;
+}
+  
+
+  .skills__icon {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+  }
+  
+  .skills__names {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+  }
+  
+  .skills__html {
+    width: 95%;
+  }
+  
+  .skills__css {
+    width: 85%;
+  }
+  
+  .skills__js {
+    width: 65%;
+  }
+  
+  .skills__ux {
+    width: 85%;
+  }
+  
+  .skills__img {
+    border-radius: .5rem;
+    border: .3rem solid var(--color-primary);
+  }
+  .skills__img{
+    width: 100%;
+    border-radius: 15px;
+    transform: translateY(-170px); /* This pushes the image upward */
+    border: 6px solid #23d5ed; /* Replace #FF0000 with the color you desire */
+    
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    margin-left: 40px;
+}
+.sub-title-2 {
+    margin-left: 550px;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
 }
 
 /*.....tab contents.....*/
@@ -266,67 +454,8 @@ text-align: center;
     transform:translateY(-10px);
 }
 /* ------------portfolio------ */
-#portfolio{
-    padding: 50px 0; 
-}
-.work-list{     /*photo tika grid ekk wdhta wtenne meken*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work{                                /*photo athare parathare hadila coner eka round wenne methnin*/
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;       /*......my work image ekat cursor eka thibhm pop up wela penaw.......... */
-}
-.layer{
-    width: 100%;
-    height: 0%;                    /* clr eka invisible una 0 krta passe*/
-    background: linear-gradient(rgba(0,0,0,0.6),#2cc6c8);
-    border-radius: 10px;
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a{
-    margin-top: 20px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.work:hover img{
-    transform: scale(1.1);    /*pop up wela pena time eka*/
-}
-.work:hover .layer{
-    height: 100%;
-}
-.btn{                            /*.....see more btn kotasa........*/
+
+.btn2{                            /*.....see more btn kotasa........*/
     display: block;
     margin: 50px auto;          
     width: fit-content;                
@@ -376,7 +505,7 @@ text-align: center;
     color: #2beff3;
     transform: translateY(-5px);
 }
-.btn.btn2{
+.btn.btn2{       /* hover*/
     display: inline-block;        /* downld cv and submit butten eka*/
     background: #00e1ff;
 }
@@ -428,7 +557,7 @@ nav .fas{
 {
 
     #header{
-        background-image: url(phone-background.png);
+        background-image: url(mypic.jpg);
     }
     .header-text{
         margin-top: 100%;
